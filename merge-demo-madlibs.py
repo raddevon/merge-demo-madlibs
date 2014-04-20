@@ -24,7 +24,7 @@ def main():
 
 Free in the jungle, Pia meets Eio, a * from a nearby *. Together, they embark on a race against * to discover the truth about Pia’s origin—a truth with * consequences that will change their * forever."""
     for current in range(0, story.count('*')):
-        story = story.replace('*', words[current], 1)
+        story = story.replace('*', words[current] + '\n', 1)
 
     with open('story.txt', 'w') as f:
         f.write(story)
